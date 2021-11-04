@@ -349,7 +349,7 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
     align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
   .navBar {
     padding: 5vmax;
