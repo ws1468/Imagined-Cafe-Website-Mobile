@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shii Cafe</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+    </style>
+
+  </head>
+  <body>
+
+    <div id="top" class="hero">
+      <div class="navBar">
+
+        <div class="logoButton"><a href="#top"><img src="logo1.png"></a></div>
+
+        <div class="nav-menu">
+          <div class="navButton"><a href="#menu">Menu</a></div>
+          <div class="navButton"><a href="#about">About</a></div>
+          <div class="navButton"><a href="#locations">Locations</a></div>
+          <div class="navButton"><a href="#contact">Contact Us</a></div>
+        </div>
+
+          <div class="hamburger">
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+                 <span class="bar"></span>
+          </div>
+
+      </div> <!-- menuBar end-->
+
+<!-- menu javascript start -->
+<!--
+https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+-->
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const navButton = document.querySelectorAll(".navButton");
+
+  hamburger.addEventListener("click", mobileMenu);
+  navButton.forEach(n => n.addEventListener("click", closeMenu));
+
+  function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  }
+
+  function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }
+  </script>
+<!-- menu javascript end -->
+
+
+      <div class="heroText">
+        <h1>Shii Cafe</h1>
+        <p> <b>BBT is love</b></p>
+        <button><a href="#slide"> <b>BBT is life </b> </a></button>
+      </div>
+    </div> <!-- hero end-->
+
+    <div id="menu" class="menuSection">
+      <div class="sectionHeader">
+        <h1>Menu</h1>
+        <p>Some of Wendy's all-time favorites</p>
+      </div>
+
+      <div class="menuItems">
+        <div class="menuDropdown">
+          <details open>
+            <summary>Milk Teas</summary>
+            <ul>
+              <li>Jasmine Milk Tea</li>
+              <li>Milk Green Tea</li>
+              <li>Earl Grey Milk Tea</li>
+              <li>Caramel Milk Tea</li>
+              <li>Oolong Milk Tea</li>
+              <li>Thai Milk Tea</li>
+            </ul>
+          </details>
+        </div> <!-- milkTeas Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Toppings</summary>
+            <ul>
+              <li>Pudding</li>
+              <li>Herbal Jelly</li>
+              <li>Tapioca</li>
+              <li>Milk Foam</li>
+              <li>Lychee Jelly</li>
+              <li>Red Bean</li>
+            </ul>
+          </details>
+        </div> <!-- toppings Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Slushies</summary>
+            <ul>
+              <li>Watermelon Slushie</li>
+              <li>Mango Slushie</li>
+              <li>Oreo Cookie Slushie</li>
+            </ul>
+          </details>
+        </div> <!-- slushies Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Savory Delights</summary>
+            <ul>
+              <li>Spam and Egg Sandwhich</li>
+              <li>Popcorn Chicken</li>
+              <li>Takoyaki</li>
+              <li>Unagi Riceball</li>
+            </ul>
+          </details>
+        </div> <!--savory Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Sweet Snacks</summary>
+            <ul>
+              <li>Tiramisu</li>
+              <li>Green Tea Mille Crepe</li>
+              <li>Purple Yam Mille Crepe</li>
+              <li>Red Bean Dorayaki</li>
+            </ul>
+          </details>
+        </div> <!--sweets Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Brewed Teas</summary>
+            <ul>
+              <li>Crysanthemum Tea</li>
+              <li>Earl Grey</li>
+              <li>Green Tea</li>
+              <li>Oolong Tea</li>
+              <li>Rose</li>
+              <li>Lavendar</li>
+            </ul>
+          </details>
+        </div> <!--BrewedTeas Dropdown end-->
+
+        <div class="menuDropdown">
+          <details open>
+            <summary>Fruit Teas</summary>
+            <ul>
+              <li>Pomelo Tea</li>
+              <li>Peach Oolong</li>
+              <li>Passionfruit Green Tea</li>
+            </ul>
+          </details>
+        </div> <!--BrewedTeas Dropdown end-->
+
+      </div> <!-- menuItems end-->
+    </div> <!--menuSection end-->
+
+
+
+<!-- JAVASCRIPT CODE OF SOMETHING I WANTED TO DO FOUND ONLINE -->
+<!-- https://stackoverflow.com/questions/43961189/automatic-slideshow-with-button -->
+<div id="slide">
+  <div class="slideshow-container">
+    <div class="mySlides fade"> <img src="blackmilktea.png" style="width:100%"> </div>
+    <div class="mySlides fade"> <img src="cheesetea.jpeg" style="width:100%"> </div>
+    <div class="mySlides fade"> <img src="creme.jpeg" style="width:100%"> </div>
+    <div class="mySlides fade"> <img src="fruitfrappe.jpeg" style="width:100%"> </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+  <br>
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var slideIndex = 0;
+showSlides();
+var slides,dots;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("mySlides");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+
+function plusSlides(position) {
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+function currentSlide(index) {
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[index-1].style.display = "block";
+    dots[index-1].className += " active";
+}
+</script>
+<!-- END OF CODE I FOUND ONLINE----------------------->
+
+
+  <div id="about" class="aboutSection">
+    <div class="sectionHeader">
+      <h1>About</h1>
+    </div>
+
+    <div class="introduction">
+      <div class="leftintroduction">
+        <p>Shii Cafe is an imaginary cafe dedicated to refining the new style of tea beverages. Soon to be one of the most recognized brands in the world, we uphold our reputation using the most premium quality tea leaves and fresh ingredients that, on taste alone, distinguishes us from our competitors. Shii Cafe is dedicated in serving imaginary customers from all around the world with the best tea and quality pixels.</p>
+      </div>
+      <div class="rightintroduction">
+        <img src="globalbrand.jpeg" alt="">
+      </div>
+    </div>
+  </div> <!--aboutSection end-->
+
+
+  <div id="locations" class="locationsSection">
+    <div class="sectionHeader">
+      <h1>Locations</h1>
+    </div>
+
+    <div class="storelocations">
+      <div class="addresslocation">
+        <h3>Brooklyn </h3>
+        <p><b> Gongcha </b></p>
+        <p><i> 156 Lawrence St</i></p>
+        <p><i>  Brooklyn, NY 11201 </i></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Manhattan</h3>
+        <p><b>YAYA Tea </b></p>
+        <p><i>206 Grand St,</i></p>
+        <p><i>New York, NY 10013</i></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Manhattan</h3>
+        <p><b>Kungfu Tea </b></p>
+        <p><i>73 Chrystie St</i></p>
+        <p><i>New York, NY 10002</i></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Manhattan</h3>
+        <p><b>Vivi Bubble Tea </b></p>
+        <p><i>49 Bayard St</i></p>
+        <p><i>New York, NY 10013</i></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Queens</h3>
+        <p><b>Möge Tee</b></p>
+        <p><i>38-03 Main St</i></p>
+        <p><i>Flushing, NY 11354</i></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Brooklyn</h3>
+        <p><b>Coming Soon</b></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>Queens</h3>
+        <p><b>Coming Soon</b></p>
+      </div>
+
+      <div class="addresslocation">
+        <h3>NYU Tandon</h3>
+        <p><b>Coming Soon</b></p>
+      </div>
+
+    </div><!-- storelocations end-->
+  </div> <!-- locationsSection end-->
+
+
+  <div id="contact" class="contactSection">
+    <div class="sectionHeader">
+      <h1>Contact Us</h1>
+
+    </div>
+
+    <div class="contactinfo">
+      <div class="phonenum">
+        <h3>+1(123-456-7890)</h3>
+      </div>
+
+      <div class="emailaddr">
+        <h3>boba@shiicafe.com</h3>
+      </div>
+    </div>
+
+  </div> <!-- contactSection end-->
+
+  <div class="footer">
+    <p> ©butnotreally© 2021 Shii Cafe</p>
+  </div> <!-- footer end-->
+
+  </body>
+</html>

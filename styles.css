@@ -1,0 +1,512 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: #3b4147;
+}
+
+.navBar {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  /* height: 100vh; */
+  padding: 5vh;
+  justify-content: space-around;
+  /* background-color: rgba(185, 210, 207, .7); */
+  /* background-color: rgba(242, 132, 130, .6); */
+  background-color: rgba(245, 158, 157, .6);
+
+
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 14vh;
+  /* z-index:10; */
+  position: fixed;
+  /* top: 0; */
+}
+
+.navButton {
+    /* padding: 14px 80px; */
+    font-size: large;
+    font-weight: bold;
+}
+
+.navButton a {
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 28px;
+  border-radius: 30px;
+}
+
+.navButton a:hover, .menuButton a:active {
+  background-color: #b9d2cf;
+}
+
+.logoButton {
+  display: flex;
+  position: relative;
+  top: -4vh;
+  left: -3vw;
+  /* background-color: #FFD7BA; */
+  /* background-image: url("logo.jpeg"); */
+  /* background-image: url("logo1.png"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* border-radius: 50px; */
+  width: 100px;
+  height: 80px;
+}
+
+.logoButton img {
+
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+
+  background-image: linear-gradient(rgba(203, 153, 126, 0.6), rgba(107, 112, 92, 0.5)), url("taromilktea.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6vh;
+  color: white;
+  font-size: x-large;
+}
+
+.heroText button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px 35px;
+  color: white;
+  background-color: #f598a0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: medium;
+}
+
+.heroText button:hover {
+  background-color: #b9d2cf;
+  color: white;
+}
+
+.heroText a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menuSection {
+    padding: 5vh;
+    /* margin: 2vh; */
+}
+
+.menuItems {
+  /* background-color: #e3e; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /* align-items: flex-start; */
+  /* height: 45vh; */
+  /* padding: 10vmin; */
+  /* gap: 10px 20px; */
+}
+
+.menuDropdown {
+  margin: 2vmin;
+}
+
+.menuDropdown ul {
+  /* margin: 5vmin; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuDropdown li {
+  padding: 1vh;
+  align-items: center;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 1vw 1vw 0;
+    width: 20vw;
+}
+
+summary {
+    font-weight: bold;
+    margin: -1vw -1vw 0;
+    padding: 1vw;
+}
+
+details[open] {
+    padding: 1vw;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 1vw;
+}
+
+.aboutSection {
+  background-color: #ffcfcf;
+  /* background-color: #ffff; */
+
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutSection .introduction {
+  display: flex;
+  /* padding: 3vh; */
+  /* margin: 3vh; */
+}
+
+.introduction * {
+  /* margin: 1vw; */
+  padding: 1vw;
+  width: 45vw;
+}
+
+.locationsSection {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationsSection .storelocations {
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.addresslocation {
+  padding: 2vw;
+}
+
+.contactSection {
+  /* background-color: #F8EDEB; */
+  background-color: #ffcfcf;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactinfo {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.contactinfo * {
+  /* padding: 2vw; */
+  margin: 2vw;
+}
+
+.contactinfo *:hover {
+  color: #91b5b5
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border-bottom: 1px solid #aaa; */
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+/* ********************************************************** */
+/* NOT MY CODE, I FOUND THIS ONLINEEEE */
+/* only customized and deleted some stuff */
+
+#slide{
+	width:100%;
+}
+
+.mySlides {
+	display: none
+}
+
+.slideshow-container {
+	width: 100vw;
+	position: relative;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dots {
+  text-align:center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 1px;
+	background-color: #FAE1DD;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active.dot, .dot:hover {
+	background-color: #D8E2DC;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/******************************************/
+/*
+https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+*/
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .navBar {
+    padding: 4vh;
+    justify-content: space-between;
+    background-color: rgba(245, 158, 157, .8);
+    backdrop-filter: blur(1px);
+    height: 12vh;
+  }
+
+  .navButton {
+      font-size: medium;
+  }
+
+  .navButton a {
+    padding: 10px 22px;
+  }
+
+  .menuItems {
+    padding: 5vw;
+  }
+
+  details {
+    width: 30vw;
+  }
+
+  summary {
+      padding: 2vw;
+  }
+
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1vmin;
+    /* border-bottom: 1px solid #aaa; */
+  }
+
+  .aboutSection {
+    background-color: #ffcfcf;
+
+    height: 70vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .aboutSection .introduction {
+    display: flex;
+    font-size: 14px;
+    /* padding: 3vmin;
+    margin: 1vmin; */
+  }
+
+  .introduction * {
+    padding: 1vw;
+    width: 45vw;
+  }
+
+  .introduction .rightintroduction {
+    padding-top: 15vh;
+  }
+
+  .locationsSection {
+    height: 100vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .locationsSection .storelocations {
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 1vmin;
+    padding-left: 3vmin;
+  }
+
+  .addresslocation {
+    padding: 2vw;
+  }
+
+  .contactSection {
+    /* background-color: #F8EDEB; */
+    background-color: #ffcfcf;
+    height: 40vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .contactinfo * {
+    margin: 2vw;
+  }
+
+  .footer {
+    height: 10vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin-top: 1vmin;
+
+  }
+
+
+/** code online w/ some modfications **/
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+
+      background-color: rgba(245, 158, 157, .8);
+      backdrop-filter: blur(1px);
+
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .navButton {
+      padding: 3%;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+ }
+
+ .hamburger.active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+ }
+
+
+}
