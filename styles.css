@@ -434,7 +434,8 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 5.2rem;
+      top: 100%;
+      /* top: 5.2rem; */
       flex-direction: column;
 
       background-color: rgba(245, 158, 157, .8);
