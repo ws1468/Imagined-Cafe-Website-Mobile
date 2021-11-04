@@ -337,7 +337,7 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
     display: block;
     width: 30px;
     height: 3px;
-    margin: 5px auto;
+    margin: 4px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
@@ -352,11 +352,11 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
 @media only screen and (max-width: 600px) {
 
   .navBar {
-    padding: 4vh;
+    padding: 5vmax;
     justify-content: space-between;
+    align-items: center;
     background-color: rgba(245, 158, 157, .8);
-    backdrop-filter: blur(1px);
-    height: 12vh;
+    height: 12vmax;
   }
 
   .navButton {
@@ -365,6 +365,14 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
 
   .navButton a {
     padding: 10px 22px;
+  }
+
+  .logoButton {
+    position: relative;
+    top: 0vh;
+    left: -3vw;
+    width: 89px;
+    height: 69px;
   }
 
   .menuItems {
@@ -380,35 +388,18 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
   }
 
   .sectionHeader {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     margin: 1vmin;
     /* border-bottom: 1px solid #aaa; */
   }
 
   .aboutSection {
-    background-color: #ffcfcf;
-
     height: 70vmax;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 1vmin;
     margin-bottom: 3vmin;
   }
 
   .aboutSection .introduction {
-    display: flex;
     font-size: 14px;
-    /* padding: 3vmin;
-    margin: 1vmin; */
-  }
-
-  .introduction * {
-    padding: 1vw;
-    width: 45vw;
   }
 
   .introduction .rightintroduction {
@@ -417,49 +408,23 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
 
   .locationsSection {
     height: 100vmax;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 4vmin;
     margin-bottom: 4vmin;
   }
 
   .locationsSection .storelocations {
-    display: flex;
-    flex-flow: row wrap;
-    /* align-items: center; */
-    justify-content: center;
     padding: 1vmin;
     padding-left: 3vmin;
   }
 
-  .addresslocation {
-    padding: 2vw;
-  }
-
   .contactSection {
-    /* background-color: #F8EDEB; */
-    background-color: #ffcfcf;
     height: 40vmax;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 3vmin;
     margin-bottom: 3vmin;
   }
 
-  .contactinfo * {
-    margin: 2vw;
-  }
-
   .footer {
     height: 10vmax;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
     margin-top: 1vmin;
 
   }
@@ -469,7 +434,7 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
   .nav-menu {
       position: fixed;
       left: -100%;
-      top: 5rem;
+      top: 8rem;
       flex-direction: column;
 
       background-color: rgba(245, 158, 157, .8);
