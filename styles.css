@@ -421,8 +421,8 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3vmin;
-    margin-bottom: 3vmin;
+    margin-top: 4vmin;
+    margin-bottom: 4vmin;
   }
 
   .locationsSection .storelocations {
@@ -446,7 +446,7 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2vmin;
+    margin-top: 3vmin;
     margin-bottom: 3vmin;
   }
 
