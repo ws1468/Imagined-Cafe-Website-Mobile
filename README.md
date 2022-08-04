@@ -1,3 +1,1 @@
-# MobileMidtermSite
-
-https://ws1468.github.io/MobileMidtermSite/
+# Imagined-Cafe-Website-Mobile
